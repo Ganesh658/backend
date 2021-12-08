@@ -10,8 +10,7 @@ const mongoose = require("mongoose");
     useUnifiedTopology:true
     });
     mongoose.connection.on('connected',()=>{
-        console.log('Connected to DB!')
-        // const mongoose = require('mongoose');
+        
     });
     
     
@@ -34,19 +33,6 @@ const mongoose = require("mongoose");
 const server = http.createServer((req, res) => {
     
     
-    /*
-
-        
-
-        we can Navigate to different pages via different requests. 
-        if / then goto index.html
-        if /about about then goto about.html
-        if /api then laod the JSON file  /  ;) this might be something you need for your exam. 
-
-
-
-    */
-   
     
     
     if (req.url === '/') {
@@ -63,20 +49,7 @@ const server = http.createServer((req, res) => {
               );
      }
 
-    else if (req.url === '/about') {
-
-
-        // read the about.html file public folder
-        fs.readFile(
-            path.join(__dirname, '/', 'about.html'),
-                    (err, content) => {
-                                    
-                                    if (err) throw err;
-                                    res.writeHead(200, { 'Content-Type': 'text/html' });
-                                    res.end(content);
-                        }
-              );
-     }
+    
     else if (req.url==='/api')
     {
        
@@ -110,9 +83,7 @@ const server = http.createServer((req, res) => {
         
     }
     
-    else{
-        res.end("<h1> 404 nothing is here</h1>");
-    }
+    
 
    
 });
