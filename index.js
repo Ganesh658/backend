@@ -10,7 +10,7 @@ const mongoose = require("mongoose");
     useUnifiedTopology:true
     });
     mongoose.connection.on('connected',()=>{
-        
+        console.log('Connected to DB!')
         // const mongoose = require('mongoose');
     });
     
