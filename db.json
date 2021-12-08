@@ -1,0 +1,18 @@
+[{
+  "id":1,
+  "title": "Pfizer",
+  "price":3000,
+  "year": 2020,
+  "inmarket": false,
+  "effectiveness":94
+
+},
+{
+  "id":2,
+  "title": "Moderna",
+  "price":1000,
+  "year": 2020,
+  "inmarket": false,
+  "effectiveness":95
+
+}]
