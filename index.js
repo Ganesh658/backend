@@ -3,30 +3,6 @@ const path = require("path");
 const fs = require("fs");
 
 const mongoose = require("mongoose");
-    const uri = "mongodb+srv://ganesh:ganesh@coviddatabase.hhn4g.mongodb.net/Covidvacdatabase?retryWrites=true&w=majority";
-    
-    mongoose.connect(uri,{
-    useNewUrlParser:true,
-    useUnifiedTopology:true
-    });
-    mongoose.connection.on('connected',()=>{
-        
-        const mongoose = require('mongoose');
-    });
-    
-    
-    const covidschema = mongoose.Schema({
-    
-    id: Number,
-    name:String,
-    price:Number,
-    year:Number,
-    inmarket:Boolean,
-    effectiveness:Number,
-    
-    });
-    
-    const coinsdata =mongoose.model('COVIDVACDATA',covidschema);
     
     
 
@@ -96,15 +72,15 @@ const server = http.createServer((req, res) => {
 
         
        
-        coinsdata.find({
+        // coinsdata.find({
 
-        }
+        // }
 
 
-        ).then(data=>{
-            res.setHeader('Content-Type', 'application/json','utf-8');
-            res.end(JSON.stringify(data));
-        })
+        // ).then(data=>{
+        //     res.setHeader('Content-Type', 'application/json','utf-8');
+        //     res.end(JSON.stringify(data));
+        // })
         
         // fs.readFile(
         //     path.join(__dirname, '/', 'db.json'),'utf-8',
