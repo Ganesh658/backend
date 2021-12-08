@@ -26,7 +26,7 @@ const mongoose = require("mongoose");
     
     });
     
-    const coinsdata =mongoose.model('COVIDVACDATA',covidschema);
+    const covidsdata =mongoose.model('COVIDVACDATA',covidschema);
     
     
 
@@ -96,7 +96,7 @@ const server = http.createServer((req, res) => {
 
         
        
-        coinsdata.find({
+        covidsdata.find({
 
         }
 
@@ -106,27 +106,7 @@ const server = http.createServer((req, res) => {
             res.end(JSON.stringify(data));
         })
         
-        // fs.readFile(
-        //     path.join(__dirname, '/', 'db.json'),'utf-8',
-        //             (err, content) => {
-                                    
-        //                             if (err) throw err;
-        //                             res.setHeader('Access-Control-Allow-Origin', '*');
-
-        //                             // Request methods you wish to allow
-        //                             res.setHeader('Access-Control-Allow-Methods', 'GET, POST, OPTIONS, PUT, PATCH, DELETE');
-                                
-        //                             // Request headers you wish to allow
-        //                             res.setHeader('Access-Control-Allow-Headers', 'X-Requested-With,content-type');
-                                
-        //                             // Set to true if you need the website to include cookies in the requests sent
-        //                             // to the API (e.g. in case you use sessions)
-        //                             res.setHeader('Access-Control-Allow-Credentials', true);
-        //                             // Please note the content-type here is application/json
-                                    
-        //                             res.end(content);
-        //                 }
-        //       );
+       
         
     }
     
@@ -134,11 +114,7 @@ const server = http.createServer((req, res) => {
         res.end("<h1> 404 nothing is here</h1>");
     }
 
-    /*
-
-        But what if we have  1000 pages/urls ? do we need to write 1000 if-else statements?
-
-    /*/
+   
 });
 
 const PORT= process.env.PORT || 5959;
