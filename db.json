@@ -9,10 +9,38 @@
 },
 {
   "id":2,
-  "title": "Moderna",
+  "title": "Sinovac",
   "price":1000,
   "year": 2020,
   "inmarket": false,
   "effectiveness":95
 
-}]
+},
+{
+  "id":3,
+  "title": "Sputnikk V",
+  "price":1000,
+  "year": 2020,
+  "inmarket": false,
+  "effectiveness":95
+
+},
+{
+  "id":4,
+  "title": "Pfizer",
+  "price":1000,
+  "year": 2020,
+  "inmarket": false,
+  "effectiveness":95
+
+},
+{
+  "id":5,
+  "title": "Novavax",
+  "price":1000,
+  "year": 2020,
+  "inmarket": false,
+  "effectiveness":95
+
+}
+]
