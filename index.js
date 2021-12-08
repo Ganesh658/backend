@@ -2,7 +2,7 @@ const http = require("http");
 const path = require("path");
 const fs = require("fs");
 
-const mongoose = require("mongoose");
+// const mongoose = require("mongoose");
     // const uri = "mongodb+srv://ganesh:ganesh@coviddatabase.hhn4g.mongodb.net/Covidvacdatabase?retryWrites=true&w=majority";
     
     // mongoose.connect(uri,{
