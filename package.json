@@ -4,11 +4,14 @@
   "description": "",
   "main": "index.js",
   "scripts": {
-    "test": "echo \"Error: no test specified\" && exit 1"
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "start": "node index.js"
   },
   "author": "",
   "license": "ISC",
   "devDependencies": {
+    "mongoose": "^6.0.14",
+    "node-fetch": "^3.1.0",
     "package": "^1.0.1"
   }
 }
